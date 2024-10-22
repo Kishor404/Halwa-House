@@ -8,6 +8,8 @@ class Log(models.Model):
     address=models.CharField(max_length=255,blank=True,null=True)
     email=models.CharField(max_length=255,blank=True,null=True,unique=True)
     phone=models.CharField(max_length=255,blank=False,null=False,unique=True)
+    dob=models.CharField(max_length=255,blank=False,null=False)
+    cart=models.JSONField(default={})
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

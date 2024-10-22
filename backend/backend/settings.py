@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+API_KEY='water'
+
 
 # Application definition
 
