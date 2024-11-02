@@ -5,7 +5,14 @@ const Login=()=>{
     return(
         <>
         <section>
-            <p>Login</p>
+            <div>
+                <div>
+                    {/* Image Here */}
+                </div>
+                <div>
+                    {/* Login Here */}
+                </div>
+            </div>
         </section>
         </>
     );

@@ -5,7 +5,12 @@ const Home=()=>{
     return(
         <>
         <section>
-            <p>Home</p>
+            <div>
+                {/* Banner Here */}
+            </div>
+            <div>
+                {/* Content Here */}
+            </div>
         </section>
         </>
     );

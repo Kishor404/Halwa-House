@@ -5,7 +5,12 @@ const Contact=()=>{
     return(
         <>
         <section>
-            <p>Contact</p>
+            <div>
+                {/* Address Here */}
+            </div>
+            <div>
+                {/* Form Here */}
+            </div>
         </section>
         </>
     );

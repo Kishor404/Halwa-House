@@ -5,7 +5,12 @@ const Halwa=()=>{
     return(
         <>
         <section>
-            <p>Halwa</p>
+            <div>
+                {/* Banner Here */}
+            </div>
+            <div>
+                {/* Products Here */}
+            </div>
         </section>
         </>
     );

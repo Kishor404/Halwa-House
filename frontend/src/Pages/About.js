@@ -5,7 +5,12 @@ const About=()=>{
     return(
         <>
         <section>
-            <p>About</p>
+            <div>
+                {/* Banner Here */}
+            </div>
+            <div>
+                {/* About Content Here */}
+            </div>
         </section>
         </>
     );

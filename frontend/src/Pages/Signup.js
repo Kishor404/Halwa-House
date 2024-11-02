@@ -5,7 +5,14 @@ const Signup=()=>{
     return(
         <>
         <section>
-            <p>Signup</p>
+            <div>
+                <div>
+                    {/* Image Here */}
+                </div>
+                <div>
+                    {/* Signup Here */}
+                </div>
+            </div>
         </section>
         </>
     );
