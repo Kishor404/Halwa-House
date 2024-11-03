@@ -14,7 +14,6 @@ import Product from './Pages/Product';
 import Sweets from './Pages/Sweets';
 
 import Login from './Pages/Login';
-import Signup from './Pages/Signup';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -35,7 +34,6 @@ root.render(
         <Route path="/Sweets" element={<Sweets />} />
 
         <Route path="/Login" element={<Login />} />
-        <Route path="/Signup" element={<Signup />} />
 
         <Route path="*" element={<h2>404 Page Not Found</h2>} />
       </Routes>

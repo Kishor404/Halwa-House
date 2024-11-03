@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.Login-com/css?family=Montserrat:400,800');
+
+
+.Login {
+	background: #f6f5f7;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+    
+}
+
+.Login-h1 {
+	font-weight: bold;
+	margin: 0;
+    margin-bottom: 30px;
+}
+
+.Login-h2 {
+	text-align: center;
+}
+
+.Login-p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+.Login-a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+
+.Login-button {
+	border-radius: 10px;
+	border: none;
+	background-color: var(--color1);
+    color: white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    margin-top: 20px;
+}
+
+
+.Login-button:active {
+	transform: scale(0.95);
+}
+
+.Login-button:focus {
+	outline: none;
+}
+
+.Login-button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+.Login-form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+.Login-input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+    border-radius: 10px;
+}
+
+.Login-container {
+	background-color: #fff;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+
+.Login-form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+
+.Login-sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.Login-container.Login-right-panel-active .Login-sign-in-container {
+	transform: translateX(100%);
+}
+
+.Login-sign-up-container {
+	left: 0;
+	width: 50%;
+	opacity: 0;
+	z-index: 1;
+}
+
+.Login-container.Login-right-panel-active .Login-sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+
+@keyframes show {
+	0%, 49.99% {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+	50%, 100% {
+		opacity: 1;
+		z-index: 5;
+	}
+}
+
+.Login-overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	transition: transform 0.6s ease-in-out;
+	z-index: 100;
+}
+
+.Login-container.Login-right-panel-active .Login-overlay-container{
+	transform: translateX(-100%);
+}
+
+.Login-overlay {
+    background: var(--color1);
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    overflow: hidden;
+}
+
+.Login-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.assettype.com/freepressjournal/2023-07/584dc6b6-d20c-4146-9361-61e988fbb00a/Untitled_design___2023_07_23T142236_565.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    filter: brightness(0.8);
+    z-index: -1; /* Places the image behind other content */
+}
+
+
+.Login-container.Login-right-panel-active .Login-overlay {
+  	transform: translateX(50%);
+}
+
+.Login-overlay-panel {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 5%;
+	text-align: center;
+	top: 0;
+	height: 100%;
+	width: 40%;
+	transform: translateX(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.Login-overlay-left {
+	transform: translateX(-20%);
+}
+
+.Login-container.Login-right-panel-active .Login-overlay-left {
+	transform: translateX(0);
+}
+
+.Login-overlay-right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.Login-container.Login-right-panel-active .Login-overlay-right {
+	transform: translateX(20%);
+}
