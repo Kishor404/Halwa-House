@@ -4,7 +4,7 @@ const ProductCard=()=>{
     return(
         <>
         <section>
-            <p>ProductCard</p>
+            <p>saravanan</p>
         </section>
         </>
     );
