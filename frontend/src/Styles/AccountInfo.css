@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+   
 }
+
 
 /* Container */
 .container {
@@ -78,7 +80,7 @@
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
+    width: 50%;
     font-size: 1em;
 }
 
@@ -89,8 +91,10 @@
 
 /* Buttons */
 .buttons {
+    margin-top: 50%;
     display: flex;
     gap: 10px;
+    flex-direction: column;
 }
 
 .buttons .cancel {
@@ -103,7 +107,7 @@
 }
 
 .buttons .save {
-    background-color: #ff4d4d;
+    background-color: #b41c1c;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -112,10 +116,22 @@
 }
 
 .buttons .logout {
-    background-color: #ff4d4d;
+    background-color:#b41c1c;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
+
+.forgetpassword {
+    background-color: #cccccc;
+    color: #333;
+    border: none;
+    padding: 10px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 250px;
+
+}
+
