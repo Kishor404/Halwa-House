@@ -9,10 +9,10 @@ const AccountInfo = () => {
             <div className="sidebar">
                 <h2>Account Info</h2>
                 <ul>
-                    <li><a href="#" className="active"><span role="img" aria-label="globe">🌐</span> General</a></li>
-                    <li><a href="#"><span role="img" aria-label="credit card">💳</span> Billing & payment</a></li>
-                    <li><a href="#"><span role="img" aria-label="clipboard">📋</span> Order History</a></li>
-                    <li><a href="#"><span role="img" aria-label="shopping cart">🛒</span> Cart</a></li>
+                    <li><a href="#" className="active"><span role="img" aria-label="globe"> <img src="icons/global.svg" alt="" width="25" height="25"/></span> General</a></li>
+                    <li><a href="#"><span role="img" aria-label="credit card"><img src="icons/billing.svg" alt="" width="25" height="25"/></span> Billing & payment</a></li>
+                    <li><a href="#"><span role="img" aria-label="clipboard"><img src="icons/order.svg" alt="" width="25" height="25"/></span> Order History</a></li>
+                    <li><a href="#"><span role="img" aria-label="shopping cart"><img src="icons/cart.svg" alt="" width="25" height="25"/></span> Cart</a></li>
                 </ul>
                 <div className="buttons">
                         <button type="button" className="cancel">Cancel</button>

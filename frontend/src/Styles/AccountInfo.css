@@ -16,6 +16,7 @@
 
 /* Sidebar */
 .sidebar {
+    margin-top: 25px;
     width: 250px;
     background-color: #f0f0f0;
     padding: 20px;
@@ -93,7 +94,7 @@
 .buttons {
     margin-top: 50%;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-direction: column;
 }
 
