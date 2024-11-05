@@ -12,7 +12,7 @@ import Contact from './Pages/Contact';
 import Halwa from './Pages/Halwa';
 import Product from './Pages/Product';
 import Sweets from './Pages/Sweets';
-
+import AccountInfo from './Pages/Accountinfo';
 import Login from './Pages/Login';
 
 import Navbar from './components/Navbar';
@@ -32,6 +32,8 @@ root.render(
         <Route path="/Halwa" element={<Halwa />} />
         <Route path="/Product" element={<Product />} />
         <Route path="/Sweets" element={<Sweets />} />
+        <Route path="/Accountinfo" element={<AccountInfo />} />
+
 
         <Route path="/Login" element={<Login />} />
 
