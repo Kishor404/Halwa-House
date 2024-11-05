@@ -4,7 +4,7 @@ const ProductCard=()=>{
     return(
         <>
         <section>
-            <p>saravanan</p>
+            <p>saravanan the mass </p>
         </section>
         </>
     );
