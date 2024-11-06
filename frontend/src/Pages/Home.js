@@ -1,3 +1,4 @@
+import ProductCard from "../components/ProductCard";
 import "../Styles/Home.css";
 import "../Styles/Styles.css";
 
@@ -9,7 +10,7 @@ const Home=()=>{
                 {/* Banner Here */}
             </div>
             <div>
-                {/* Content Here */}
+                <ProductCard/>
             </div>
         </section>
         </>

@@ -32,7 +32,7 @@ const ProductCard = () => {
         <p className="product-card-price">{price}</p>
         <div className="product-card-rating-contain">
           <span className="product-card-rating-star">{getStarRating(ratingValue)}</span>
-          <span className="product-card-rating-number">({ratingValue}/{ratingCount})</span>
+          <span className="product-card-rating-number">({ratingCount})</span>
         </div>
         <p className="product-card-description">
           {description}
