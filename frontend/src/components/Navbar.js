@@ -6,7 +6,7 @@ function Navbar() {
             <div className="navdiff">
                 <div className="navbar-logo">
                     <div className="Nav-Rex">
-                        <img src="icons\1.png" alt="Lala Halwa House Logo" className="logo" />
+                        <img src="/Images/Logo.png" alt="Lala Halwa House Logo" className="Navbar-logo"/>
                         <h1>Lala Halwa House</h1>
                     </div>
                     <div className="Nav-Uv">
