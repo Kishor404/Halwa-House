@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 import "./components.css";
 
 function Navbar() {
@@ -13,12 +16,14 @@ function Navbar() {
                         <div className="navbar-search">
                             <input type="text" placeholder="Let's Eat" />
                             <button type="submit" className="search-button">
-                                
+                                <img src="icons/search.svg" alt="" width="15" height="25" />
                             </button>
-                            <img src="icons/search.svg" alt="" width="15" height="25" />
+                            
                         </div>
                         <div className="navbar-account">
-                            <img src="icons/account.svg" alt="" width="25" height="26" />
+                            <Link to="/Accountinfo">
+                                <img src="icons/account.svg" alt="" width="25" height="26" />
+                            </Link>
                         </div>
                     </div>
                     
@@ -28,11 +33,11 @@ function Navbar() {
 
                 <div className="nav-menu">
                     <ul className="navbar-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sweets">Sweets</a></li>
-                        <li><a href="#halwa">Halwa</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/sweets">Sweets</Link></li>
+                        <li><Link to="/halwa">Halwa</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
 
                 </div>

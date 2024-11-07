@@ -38,9 +38,9 @@ const AccountInfo = () => {
                     <input type="email" id="email"/>
                     
                 </form>
-                <div className="forgetpassword">
+                <button className="forgetpassword">
                 <h4>change password</h4>
-                </div>
+                </button>
     
             </div> 
            

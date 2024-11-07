@@ -11,20 +11,18 @@
 /* Container */
 .container {
     display: flex;
-    height: 100vh;
 }
 
 /* Sidebar */
 .sidebar {
-    margin-top: 25px;
     width: 250px;
     background-color: #f0f0f0;
-    padding: 20px;
+    padding: 45px 20px;
 }
 
 .sidebar h2 {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .sidebar ul {
@@ -32,7 +30,7 @@
 }
 
 .sidebar ul li {
-    margin-bottom: 15px;
+    padding: 20px 0px;
 }
 
 .sidebar ul li a {
@@ -59,7 +57,7 @@
 
 .content h2 {
     font-size: 1.5em;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 /* Form */
@@ -108,7 +106,7 @@
 }
 
 .buttons .save {
-    background-color: #b41c1c;
+    background-color: var(--color1);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -117,7 +115,7 @@
 }
 
 .buttons .logout {
-    background-color:#b41c1c;
+    background-color:var(--color1);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -129,10 +127,10 @@
     background-color: #cccccc;
     color: #333;
     border: none;
-    padding: 10px 50px;
+    padding: 15px 30px;
     border-radius: 5px;
     cursor: pointer;
-    width: 250px;
+    margin-top: 20px;
 
 }
 
