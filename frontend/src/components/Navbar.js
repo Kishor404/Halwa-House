@@ -1,22 +1,28 @@
 import "./components.css";
-import "../Styles/Navbar.css";
+
 function Navbar() {
     return (
         <nav className="navbar">
             <div className="navdiff">
                 <div className="navbar-logo">
-                    <img src="icons\1.png" alt="Lala Halwa House Logo" className="logo" />
-                    <h1>Lala Halwa House</h1>
-                    <div className="navbar-search">
-                        <input type="text" placeholder="Let's Eat" />
-                        <button type="submit" className="search-button">
-                            
-                        </button>
-                        <img src="icons/search.svg" alt="" width="15" height="25" />
+                    <div className="Nav-Rex">
+                        <img src="icons\1.png" alt="Lala Halwa House Logo" className="logo" />
+                        <h1>Lala Halwa House</h1>
                     </div>
-                    <div className="navbar-account">
-                        <img src="icons/account.svg" alt="" width="25" height="26" />
+                    <div className="Nav-Uv">
+                        <div className="navbar-search">
+                            <input type="text" placeholder="Let's Eat" />
+                            <button type="submit" className="search-button">
+                                
+                            </button>
+                            <img src="icons/search.svg" alt="" width="15" height="25" />
+                        </div>
+                        <div className="navbar-account">
+                            <img src="icons/account.svg" alt="" width="25" height="26" />
+                        </div>
                     </div>
+                    
+                    
                 </div>
 
 
