@@ -14,6 +14,7 @@ import Product from './Pages/Product';
 import Sweets from './Pages/Sweets';
 import AccountInfo from './Pages/Accountinfo';
 import ProductCard from './components/ProductCard'
+import ProductInfo from './components/ProductInfo';
 import Login from './Pages/Login';
 
 import Navbar from './components/Navbar';
@@ -35,6 +36,8 @@ root.render(
         <Route path="/Sweets" element={<Sweets />} />
         <Route path="/Accountinfo" element={<AccountInfo />} />
         <Route path="/ProductCard" element={<ProductCard />} />
+        <Route path="/ProductInfo" element={<ProductInfo />} />
+
 
 
 
