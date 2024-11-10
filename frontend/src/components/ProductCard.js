@@ -1,8 +1,8 @@
 import React from 'react';
 import "./components.css";
-import "../Styles/ProductCard.css";
+import "../Styles/ProductInfo.css";
 
-const ProductCard = () => {
+const ProductInfo = () => {
   // Assigning values to variables
   const name = "Gulab Jamun";
   const price = "₹1299 per kg";
@@ -42,4 +42,4 @@ const ProductCard = () => {
   );
 };
 
-export default ProductCard;
+export default ProductInfo;
