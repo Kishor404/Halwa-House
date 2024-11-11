@@ -1,45 +1,45 @@
 import "./components.css";
+import React from 'react';
+import "../Styles/ProductInfo.css";
 
 const ProductInfo = () => {
-    // Product details
     const product = {
-      name: "Gulab Jamun",
-      price: "₹1299 per kg",
-      ratingValue: 4.5, // Numeric rating
-      ratingCount: 413,
-      description: "Each bite reveals a soft, syrup-soaked center, making it a favorite among sweet lovers. Crafted with authentic ingredients, it promises a rich flavor that lingers on your palate.",
-      imageSrc: "gulab-jamuns.png" // Image source
+        name: "Gulab Jamun",
+        description: "Each bite reveals a soft, syrup-soaked center, making it a favorite among sweet lovers. Crafted with authentic ingredients, it promises a rich flavor that lingers on your palate.",
+        rating: 4.5,
+        reviews: 85,
+        discount: 35,
+        price: 200,
+        weightOptions: ["1 Kg", "2 Kg", "3 Kg"],
+        selectedWeight: "2 Kg",
+        image: "gulab-jamuns.png"
     };
-  
-    // Generate star rating based on the numeric value
-    const getStarRating = (rating) => {
-      const fullStars = Math.floor(rating);
-      const halfStar = rating % 1 >= 0.5 ? "★" : "";
-      const emptyStars = 5 - fullStars - (halfStar ? 1 : 0);
-  
-      return "★".repeat(fullStars) + halfStar + "☆".repeat(emptyStars);
-    };
-  
+
     return (
-      <div className="product-card">
-        <img
-          src={product.imageSrc}
-          alt={product.name}
-          className="product-card-image"
-        />
-        <div className="product-card-content">
-          <h2 className="product-card-title">{product.name}</h2>
-          <p className="product-card-price">{product.price}</p>
-          <div className="product-card-rating-contain">
-            <span className="product-card-rating-star">{getStarRating(product.ratingValue)}</span>
-            <span className="product-card-rating-number">({product.ratingCount})</span>
-          </div>
-          <p className="product-card-description">
-            {product.description}
-          </p>
+        <div className="product-card">
+            <img src={product.image} alt={product.name} className="product-image" />
+            <h2 className="product-name">{product.name}</h2>
+            <p className="product-description">{product.description}</p>
+            <div className="product-rating">
+                {"★".repeat(Math.floor(product.rating))}{"☆".repeat(5 - Math.floor(product.rating))}
+                <span className="review-count">{product.reviews} reviews</span>
+            </div>
+            <div className="product-price">
+                <span className="discount">-{product.discount}%</span>
+                <span className="price">₹ {product.price}</span>
+            </div>
+            <div className="weight-options">
+                {product.weightOptions.map((weight) => (
+                    <button 
+                        key={weight} 
+                        className={`weight-button ${product.selectedWeight === weight ? "active" : ""}`}
+                    >
+                        {weight}
+                    </button>
+                ))}
+            </div>
         </div>
-      </div>
     );
-  };
+};
   
   export default ProductInfo;
