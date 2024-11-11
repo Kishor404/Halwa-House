@@ -1,8 +1,8 @@
 import React from 'react';
 import "./components.css";
-import "../Styles/ProductInfo.css";
+import "../Styles/ProductCard.css";
 
-const ProductInfo = () => {
+const ProductCard = () => {
   // Assigning values to variables
   const name = "Gulab Jamun";
   const price = "₹1299 per kg";
@@ -28,12 +28,19 @@ const ProductInfo = () => {
         className="product-card-image"
       />
       <div className="product-card-content">
-        <h2 className="product-card-title">{name}</h2>
-        <p className="product-card-price">{price}</p>
-        <div className="product-card-rating-contain">
-          <span className="product-card-rating-star">{getStarRating(ratingValue)}</span>
-          <span className="product-card-rating-number">({ratingCount})</span>
+        <div className='product-card-topcon'>
+          <div className='product-card-topcon-l'>
+            <h2 className="product-card-title">{name}</h2>
+            <div className="product-card-rating-contain">
+              <span className="product-card-rating-star">{getStarRating(ratingValue)}</span>
+              <span className="product-card-rating-number">({ratingCount})</span>
+            </div>
+          </div>
+          <div className='product-card-topcon-r'>
+            <p className="product-card-price">{price}</p>
+          </div>
         </div>
+        
         <p className="product-card-description">
           {description}
         </p>
@@ -42,4 +49,4 @@ const ProductInfo = () => {
   );
 };
 
-export default ProductInfo;
+export default ProductCard;
