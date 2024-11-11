@@ -1,10 +1,10 @@
 .product-card {
     width: 300px;
     height: 350px;
-    border-radius: 15px;
-    background-color: #ebeaea;
+    border-radius: 45px;
+    background-color: #ccc7c7;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(138, 137, 137, 0.856);
+    box-shadow: 0px 4px 10px rgba(171, 170, 170, 0.856);
     font-family: Arial, sans-serif;
  }
  

@@ -2,16 +2,13 @@ import React from 'react';
 import "./components.css";
 import "../Styles/ProductCard.css";
 
-const ProductCard = () => {
-  // Assigning values to variables
+const ProductCard = ({ imageSrc }) => {
   const name = "Gulab Jamun";
   const price = "₹1299 per kg";
-  const ratingValue = 2; // Numeric rating
+  const ratingValue = 2;
   const ratingCount = 413;
   const description = "Each bite reveals a soft, syrup-soaked center, making it a favorite among sweet lovers. Crafted with authentic ingredients, it promises a rich flavor that lingers on your palate.";
-  const imageSrc = "gulab-jamuns.png"; // Image source variable
 
-  // Generate star rating based on the numeric value
   const getStarRating = (rating) => {
     const fullStars = Math.floor(rating);
     const halfStar = rating % 1 >= 0.5 ? "★" : "";
@@ -22,11 +19,7 @@ const ProductCard = () => {
 
   return (
     <div className="product-card">
-      <img
-        src={imageSrc}
-        alt={name}
-        className="product-card-image"
-      />
+      <img src={imageSrc} alt={name} className="product-card-image" />
       <div className="product-card-content">
         <div className='product-card-topcon'>
           <div className='product-card-topcon-l'>
@@ -40,10 +33,7 @@ const ProductCard = () => {
             <p className="product-card-price">{price}</p>
           </div>
         </div>
-        
-        <p className="product-card-description">
-          {description}
-        </p>
+        <p className="product-card-description">{description}</p>
       </div>
     </div>
   );
