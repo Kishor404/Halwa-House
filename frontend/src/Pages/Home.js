@@ -1,6 +1,8 @@
 import ProductCard from "../components/ProductCard";
 import "../Styles/Home.css";
 import "../Styles/Styles.css";
+import { Link } from 'react-router-dom';
+
 import "../Styles/ProductCard.css";
 
 const Home = () => {
@@ -70,7 +72,10 @@ const Home = () => {
               <ProductCard key={index} imageSrc={imageSrc} />
             ))}
           </div>
+          <Link to="/Halwa">
           <button className="view-more-button">View More</button>
+
+          </Link>
         </div>
 
         {/* Halwa */}
@@ -85,8 +90,13 @@ const Home = () => {
               <ProductCard key={index} imageSrc={imageSrc} />
             ))}
           </div>
+          <Link to="/sweets">
           <button className="view-more-button">View More</button>
+
+          </Link>
         </div>
+          
+          
       </div>
     );
   };
