@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Hero Banner */
+  .hero-banner {
+    background-image: url('C:\Users\rit\Desktop\Gopikaran R\lalahalwa\Halwa-House\frontend\public\Images\aboutpage1.png'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    max-width: 600px;
+  }
+  
+
+  .contact-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+.submit-btn {
+    grid-column: span 1;
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.submit-btn:hover {
+    background-color: #b71c1c;
+} 
+
+ 
+  
+  /* Contact Info Section */
+  .contact-info {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10%;
+  }
+  
+  @media (min-width: 768px) {
+    .contact-details {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+  
+  .map {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .address {
+    text-align: left;
+  }
+  
+  .address h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  
+  .address p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    line-height:1.9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  
