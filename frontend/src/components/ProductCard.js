@@ -2,12 +2,12 @@ import React from 'react';
 import "./components.css";
 import "../Styles/ProductCard.css";
 
-const ProductCard = ({ imageSrc }) => {
-  const name = "Gulab Jamun";
-  const price = "₹1299 per kg";
-  const ratingValue = 2;
-  const ratingCount = 413;
-  const description = "Each bite reveals a soft, syrup-soaked center, making it a favorite among sweet lovers. Crafted with authentic ingredients, it promises a rich flavor that lingers on your palate.";
+const ProductCard = ({ imageSrc,n,p,rv,rc,d }) => {
+  const name = n||"Gulab Jamun";
+  const price = p||"₹1299 per kg";
+  const ratingValue = rv||2;
+  const ratingCount = rc||413;
+  const description = d||"Each bite reveals a soft, syrup-soaked center, making it a favorite among sweet lovers. Crafted with authentic ingredients, it promises a rich flavor that lingers on your palate.";
 
   const getStarRating = (rating) => {
     const fullStars = Math.floor(rating);
