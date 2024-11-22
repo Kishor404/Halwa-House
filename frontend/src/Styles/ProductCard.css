@@ -70,3 +70,38 @@
    flex-direction: column;
    justify-content: flex-start;
  }
+
+ @media (max-width:1260px) {
+   .product-card {
+      width: 250px;
+      height: 300px;
+   }
+   .product-card-title {
+      font-size: 17px;
+   }
+   .product-card-price {
+      font-size: 15px;
+   }
+   .product-card-description {
+      font-size: 12px;
+      margin-top: 0px;
+   }
+   
+ }
+ @media (max-width:1082px) {
+   .product-card {
+      width: 230px;
+      height: 280px;
+   }
+   .product-card-title {
+      font-size: 16px;
+   }
+   .product-card-price {
+      font-size: 14px;
+   }
+   .product-card-description {
+      font-size: 11px;
+      margin-top: 0px;
+   }
+   
+ }
