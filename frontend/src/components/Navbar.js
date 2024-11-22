@@ -10,7 +10,7 @@ function Navbar() {
                 <div className="navbar-logo">
                     <div className="Nav-Rex">
                         <img src="/Images/Logo.png" alt="Lala Halwa House Logo" className="Navbar-logo"/>
-                        <h1>Lala Halwa House</h1>
+                        {/* <h1>Lala Halwa House</h1> */}
                     </div>
                     <div className="Nav-Uv">
                         <div className="navbar-search">
